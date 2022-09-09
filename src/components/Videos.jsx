@@ -8,10 +8,10 @@ const Videos = ({ videos, direction }) => {
   
   return (
     <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
-      {videos.map((video, index) => (
-        <Box key={index}>
+      {videos.map((video, id) => (
+        <Box key={id}>
           {video && <VideoCard video ={video}/> }
-          {video && <ChannelCard channelDetail />}
+          {/* {video && <ChannelCard channelDetail />} */}
         </Box>
       ))}
     </Stack>
